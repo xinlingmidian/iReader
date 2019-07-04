@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_actionbar"
+        android:background="#F1E5C9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/chaptertitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/menu_text_color"
+                />
+            <TextView
+                 android:id="@+id/contentview"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:paddingLeft="8dp"
+                 android:paddingRight="8dp"
+                 android:textSize="19sp"
+                 android:lineSpacingExtra="5dp"
+                 android:textColor="@color/menu_text_color"
+                />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/control"
+        android:layout_width="160sp"
+        android:layout_height="65sp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        />
+
+    <Button
+        android:id="@+id/previousbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/reader_previous_chapter"
+        android:background="#50000000"
+        />
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/reader_next_chapter"
+        android:background="#50000000"
+        />
+
+    <Button
+        android:id="@+id/goback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:text="@string/action_chapter_list"
+        android:background="#50000000"
+        />
+
+</RelativeLayout>
